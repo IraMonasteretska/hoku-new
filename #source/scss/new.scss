@@ -183,8 +183,6 @@
         }
     }
 
-
-
 }
 
 .latestnews {
@@ -246,6 +244,13 @@
     }
 }
 
+.bgel2 {
+    right: 0;
+}
+
+
+
+
 @media(max-width:1199.8px) {
 
     .newhero {
@@ -256,13 +261,13 @@
         padding: 90px 0 100px;
     }
 
-    .articlesection article {
-        h1 {
-            
-        }
+    .articlesection article .blockquote__boxes {
+        padding: 0;
     }
 
-
-
+    .bgel2 {
+        right: 0;
+        bottom: -20px;
+    }
 
 }

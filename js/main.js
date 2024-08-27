@@ -167,7 +167,10 @@ $(document).ready(function () {
         },
     });
 
-    const player = new Plyr('#player');
+    if ($('video').length > 0) {
+        const player = new Plyr('#player');
+    }
+   
 
 
 
