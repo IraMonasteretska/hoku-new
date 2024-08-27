@@ -1,0 +1,268 @@
+.newhero {
+    height: 482px;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: 50% 50%;
+
+    }
+}
+
+.articlesection {
+    padding: 90px 0 130px;
+
+    article {
+        h1 {
+            font-size: 44px;
+            color: rgba(4, 34, 63, 1);
+            font-family: "Futura-demi";
+            margin-bottom: 30px;
+            line-height: 130%;
+            text-transform: capitalize;
+        }
+
+        h2 {
+            font-size: 36px;
+            color: rgba(4, 34, 63, 1);
+            font-family: "Futura-demi";
+            margin-bottom: 30px;
+            line-height: 130%;
+            text-transform: capitalize;
+        }
+
+        h3 {
+            font-size: 30px;
+            color: #04223F;
+            font-family: "Futura-demi";
+            margin-bottom: 30px;
+            line-height: 130%;
+            text-transform: capitalize;
+            margin-top: 70px;
+        }
+
+        h4 {
+            font-size: 23px;
+            color: #586C8C;
+            font-family: "Futura-demi";
+            margin-bottom: 20px;
+            line-height: 130%;
+            text-transform: capitalize;
+        }
+
+
+        p {
+            margin-bottom: 30px;
+            color: #657999;
+            line-height: 160%;
+
+            a {
+                color: rgba(53, 170, 249, 1);
+                font-weight: 600;
+            }
+        }
+
+        img {
+            border-radius: 20px;
+            margin-bottom: 15px;
+            width: 100%;
+        }
+
+        figure {
+            text-align: center;
+            margin-bottom: 30px;
+
+            figcaption {
+                color: #657999;
+            }
+        }
+
+        ol,
+        ul {
+            padding-left: 20px;
+            margin-bottom: 30px;
+
+            li {
+                line-height: 180%;
+                color: #657999;
+            }
+        }
+
+        .videosection {
+            position: relative;
+            overflow: hidden;
+            border-radius: 20px;
+        }
+
+        .plyr__poster {
+            background-color: transparent;
+        }
+
+        .plyr.plyr--stopped .plyr__controls {
+            display: none
+        }
+
+        .plyr--full-ui.plyr--video .plyr__control--overlaid {
+            background: rgba(53, 170, 249, 1);
+            backdrop-filter: blur(20px);
+            width: 100% !important;
+            max-width: 80px;
+            flex: 0 0 80px;
+            height: 80px;
+            display: inline-flex !important;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .blockquote__boxes {
+            padding: 0 57px;
+            position: relative;
+            padding-bottom: 80px;
+
+            .blockquote__box {
+                padding: 65px 0 85px;
+                position: relative;
+            }
+
+            blockquote {
+                border-radius: 20px;
+                background: rgba(53, 170, 249, 1);
+                max-width: 717px;
+                padding: 80px 47px 66px;
+                color: #fff;
+                line-height: 160%;
+                position: relative;
+
+                &::before {
+                    content: '';
+                    display: inline-block;
+                    width: 62px;
+                    height: 62px;
+                    position: absolute;
+                    left: 13px;
+                    top: 0;
+                    z-index: 1;
+                    background: url('../img/new/bq.png') no-repeat center / 100%;
+                    margin-top: -25px;
+                }
+            }
+
+            .newava {
+                width: 110px;
+                position: absolute;
+                right: 0;
+                bottom: 0;
+            }
+        }
+
+        .newbtns {
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid #DDE1E8;
+
+            a {
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                margin: 0 10px;
+                border: 1px solid rgba(53, 170, 249, 1);
+                min-height: 50px;
+                border-radius: 27px;
+                min-width: 137px;
+                font-weight: 500;
+                font-size: 17px;
+                color: rgba(53, 170, 249, 1);
+                transition: 0.5s;
+
+                &:hover {
+                    background: rgba(53, 170, 249, 1);
+                    color: #fff;
+                }
+            }
+        }
+    }
+
+
+
+}
+
+.latestnews {
+    text-align: left;
+    max-width: 376px;
+    width: 100%;
+    display: inline-block;
+    position: sticky;
+    top: 120px;
+
+    .title {
+        text-transform: uppercase;
+        margin-bottom: 40px;
+        color: rgba(24, 58, 107, 1);
+        font-family: "Inter", sans-serif;
+        font-size: 25px;
+        font-weight: 700;
+        line-height: 130%;
+    }
+
+    .latestnewsbox {
+        display: flex;
+        flex-wrap: wrap;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+        border-bottom: 1px solid #DDE1E8;
+
+        .imgwrap {
+            width: 100%;
+            max-width: 100px;
+            flex: 0 0 100px;
+
+            img {
+                border-radius: 10px;
+                width: 100%;
+                margin: 0;
+            }
+        }
+
+        p {
+            margin: 0;
+            width: 100%;
+            max-width: calc(100% - 100px);
+            flex: 0 0 calc(100% - 100px);
+            padding-left: 15px;
+            font-family: "Futura";
+            font-weight: 500;
+            color: #768AAA;
+            font-size: 20px;
+            line-height: 110%;
+            transition: 0.5s;
+        }
+
+        &:hover {
+            p {
+                color: #04223F;
+            }
+        }
+    }
+}
+
+@media(max-width:1199.8px) {
+
+    .newhero {
+        height: 360px;
+    }
+
+    .articlesection {
+        padding: 90px 0 100px;
+    }
+
+    .articlesection article {
+        h1 {
+            
+        }
+    }
+
+
+
+
+}

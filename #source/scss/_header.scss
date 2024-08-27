@@ -1,0 +1,131 @@
+header.header {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 12;
+    padding: 18px 0;
+    transition: 0.5s;
+    height: 120px;
+    display: flex;
+    align-items: center;
+
+    nav {
+        position: relative;
+    }
+
+    ul {
+        padding: 63px 25px;
+        width: 260px;
+        border-radius: 20px;
+        background: rgba(#fff, 0.7);
+        position: absolute;
+        right: 0;
+        top: 15px;
+        box-shadow: inset -5px 5px 5px #e9e8e8;
+        backdrop-filter: blur(10px);
+        list-style: none;
+        text-align: center;
+        opacity: 0;
+        z-index: -1;
+        visibility: hidden;
+        transition: 0.5s;
+        animation-timing-function: ease-in-out;
+        transform: translateX(30px);
+
+        li {
+            margin-bottom: 30px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            &.active {
+                a {
+                    color: #004FEA;
+                }
+            }
+
+            a {
+                color: #040927;
+                font-size: 18px;
+                line-height: 135%;
+            }
+        }
+
+        &.showmenu {
+            opacity: 1;
+            z-index: 4;
+            visibility: visible;
+            transform: translateX(0);
+        }
+    }
+
+    &.scrollheader {
+        padding: 5px 0;
+        background: rgba(14, 22, 38, 0.5);
+    }
+}
+
+.header__logo {
+    max-width: 100%;
+
+    img {
+        max-width: 100%;
+    }
+}
+
+.header__menuwrap {
+    text-align: right;
+}
+
+.menubtn {
+    background: transparent;
+    border: none;
+    outline: none;
+
+    img {}
+}
+
+.header.header ul {
+    overflow: auto;
+    max-height: calc(100vh - 100px);
+}
+
+.fixedel {
+    position: fixed;
+    right: 0;
+    top: 18px;
+}
+
+@media(max-width:767.8px) {
+    .menubtn {
+        img {
+            width: 70px;
+        }
+    }
+
+    .header__logo img {
+        max-width: 80px;
+    }
+
+    header.header {
+        height: 100px;
+    }
+}
+
+@media(max-width:575.8px) {
+    header.header,
+    header.header.scrollheader {
+        padding: 0;
+    }
+
+    header.header {
+        height: 70px;
+    }
+
+    .fixedel {
+        top: 0;
+    }
+
+}
