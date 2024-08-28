@@ -312,3 +312,63 @@
 
 }
 
+@media(max-width:575.8px) {
+    .articlesection article h1 {
+        font-size: 32px;
+        margin-bottom: 20px;
+    }
+
+    .articlesection {
+        padding: 50px 0;
+    }
+
+    .articlesection article h3 {
+        font-size: 24px;
+        margin-top: 50px;
+        margin-bottom: 20px;
+    }
+
+    .articlesection article h4 {
+        margin-bottom: 10px;
+    }
+
+    .articlesection article .blockquote__boxes blockquote:before {
+        width: 40px;
+        height: 40px;
+        top: 5px;
+    }
+
+    .articlesection article .blockquote__boxes blockquote {
+        padding: 40px 30px 40px;
+    }
+
+    .articlesection article .blockquote__boxes .newava {
+        width: 70px;
+    }
+
+    .articlesection article .newbtns {
+        display: flex;
+        justify-content: space-between;
+        
+        a {
+            min-width: initial;
+            width: 100%;
+            max-width: calc(50% - 10px);
+            flex: 0 0 calc(50% - 10px);
+            margin: 0;
+        }
+    }
+
+    .articlesection article .blockquote__boxes .blockquote__box {
+        padding: 30px 0 50px;
+    }
+
+
+
+
+
+
+
+
+
+}
