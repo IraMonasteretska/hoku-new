@@ -20,7 +20,6 @@
             font-family: "Futura-demi";
             margin-bottom: 30px;
             line-height: 130%;
-            text-transform: capitalize;
         }
 
         h2 {
@@ -150,6 +149,9 @@
 
             .newava {
                 width: 110px;
+                height: 110px;
+                object-fit: cover;
+                border-radius: 50%;
                 position: absolute;
                 right: 0;
                 bottom: 0;
@@ -344,6 +346,7 @@
 
     .articlesection article .blockquote__boxes .newava {
         width: 70px;
+        height: 70px;
     }
 
     .articlesection article .newbtns {
